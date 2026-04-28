@@ -5,7 +5,7 @@ This is a Chinese "UNIC" projector clone with "40-Main-V1.0 (20181228)" motherbo
 With the help of artificial intelligence, it was possible to find out the location of the debug port on this type of motherboard, and with a ch340 serial uart device, it was possible to extract information about the cause of the error in my projector.
 
 
-The VGA connector pin 10 is the GND, pin 12 is the RX, pin 15 is the TX data pin, but it is important that it has 3.3 volt TTL levels. I have attached a picture of this pinout here.
+The VGA connector pin 10 is the GND, pin 12 is the RX, pin 15 is the TX data pin, but it is important that it has 3.3 volt TTL levels. I have attached a picture of this pinout here.(pinout.png)
 
 The uart connector (VGA) must be connected with a baud rate of 115200.
 
@@ -17,12 +17,16 @@ In the dump I saved (uc68-dump.bin), the file system is faulty and it says "SQUA
 
 The other firmware is a flash dump downloaded from 4pda.to (unic_uc68_4pda.bin), where the HDMI and VGA ports did not work for me.
 
-I saved and flashed from the 25Q128 flash using the CH341A programmer.
+I saved and flashed from the 25Q128 flash (25VG128ASEG) using the CH341A programmer.
 
 
 My hardware:  Realtek RTD2936HBZ CPU ,realtek rtl8188ETV wifi module ,U-Boot 2012.07
 
 
 Boot + Kernel	0x000000	4040 KB
+
+
 RootFS	0x3F2000	10304 KB
+
+
 User Data	0xE02000	1656 KB
