@@ -20,13 +20,7 @@ The other firmware is a flash dump downloaded from 4pda.to (unic_uc68_4pda.bin),
 I saved and flashed from the 25Q128 flash (25VG128ASEG) using the CH341A programmer.
 
 
-My hardware:  Realtek RTD2936HBZ CPU ,realtek rtl8188ETV wifi module ,U-Boot 2012.07
+My hardware:  Realtek RTD2936HBZ CPU ,realtek rtl8188ETV wifi module ,U-Boot 2012.07 ,LC03502G24E  LC3502 LCoS (Liquid Crystal on Silicon)
 
 
-Boot + Kernel	0x000000	4040 KB
-
-
-RootFS	0x3F2000	10304 KB
-
-
-User Data	0xE02000	1656 KB
+The problem with my projector is that it is not an original UNIC uc68, so I cannot load the display panel settings, but those who have an original UNIC uc68 projector can use the original file that I found for it. My other problem is that the CRC (Cyclic Redundancy Check)  of my penel.bin file is not correct for my system.And I also experienced a DCC (Dynamic Color Control) error because of it.
