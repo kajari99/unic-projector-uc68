@@ -23,4 +23,4 @@ I saved and flashed from the 25Q128 flash (25VG128ASEG) using the CH341A program
 My hardware:  Realtek RTD2936HBZ CPU ,realtek rtl8188ETV wifi module ,U-Boot 2012.07 ,LC03502G24E  LC3502 LCoS (Liquid Crystal on Silicon)
 
 
-The problem with my projector is that it is not an original UNIC uc68, so I cannot load the display panel settings, but those who have an original UNIC uc68 projector can use the original file that I found for it. My other problem is that the CRC (Cyclic Redundancy Check)  of my penel.bin file is not correct for my system.And I also experienced a DCC (Dynamic Color Control) error because of it.
+The problem with my projector is that it is not an original UNIC uc68, so I cannot load the display panel settings, but those who have an original UNIC uc68 projector can use the original file that I found for it. My other problem is that the CRC (Cyclic Redundancy Check)  of my panel.bin file is not correct for my system.And I also experienced a DCC (Dynamic Color Control) error because of it.
