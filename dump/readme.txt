@@ -1,2 +1,2 @@
-Az unic_uc68_4pda.bin az eredeti az topicból aminek a képét mellékeltem .
-Az uc68-dump egy hibás firmware!
+unic_uc68_4pda.bin is the original from the topic, the image of which I attached.
+The uc68-dump is a faulty firmware!
