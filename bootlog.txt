@@ -1,0 +1,1592 @@
+Hello world, 293x!{uni}[WEI]
+svn: (Dec 22 2016 17:44:32)
+flash_type = 0, secure_type = 0
+crc32_ddr_value: 723a901 crc32_spi_value: 723a901 addr(4c00-4ffc)
+spi 0xb801a808: 202 crc32 check ok
+
+Remain unload bootcode = 0x0
+
+enable_scpu_clk 246
+REG_CRT_SUSPEND_reg = [0], REG_STR_JUMP_ADDR_reg = [0]
+ru
+U-Boot 2012.07-sw/2936/2936_duowei/bootcode-svn92 (Jan 03 2019 - 16:02:04) r-!
+DRAM: 128 MiB
+*****[uboot] AC ON*****
+Await 
+[SFC_LOG][INFO] spi nor id: 0x5e4018
+[SFC_LOG][INFO] [SPINOR-INFO] do_identify_s success!!!
+[SFC_LOG][INFO] SPI FLASH   =  ZB25VQ128   
+[SFC_LOG][INFO] support eMODE_READ_NORMAL
+BOOT_SCHEDULE_REC_PANEL_OFF=0
+[CEC:bootcode]bootparam.c:230
++++++boot_power_on_mode
+FW_DVLOGO_IMAGE, bin, target:0xdeaddead, offset:0x3e0000, size:0x1186f, spi_layout:0x1f
+[ENV] read_env from factory failed
+[ENV] Using default environment variables
+
+[INFO] env_relocate:usb start_ac failed. (No USB plug-in)
+install_file_name  601 env_relocate 
+*****[uboot] board_init_r panel_init start*****
+*****[uboot] panel_init_1st start*****
+panel_init_1st  LVDS ON
+boot_record_standby = 0 boot_power_on_mode = 0  wk_sor = 12
+=== Panel Type : 0 ===
+[uboot][panel_init_1st] end!!!
+*****[uboot] board_init_r panel_init end*****
+Net:   rtl8139: REALTEK RTL8139 
+Hit Esc or Tab key to enter console mode or rescue linux:  0
+
+*****[uboot] rtk_plat_boot_handler start*****
+*****[uboot] boot_mode=2  boot_ac_on=1 boot_power_on_mode=0*****
+*****[uboot] rtk_plat_boot_setup start*****
+*****[uboot] boot_from_flash=0  boot_from_usb=0 boot_flash_type=0*****
+
+*****[uboot] do_bootm_linux start*****
+*****[uboot] flag = 0*****
+*****[uboot] boot_prep_linux start*****
+*****[uboot] boot_mode=2  boot_ac_on=1 boot_power_on_mode=0*****
+[rtk_plat_boot_prep_mtdparts_nor:938]CKP:tmp_cmdline:androidboot.console=ttyS0 console=ttyS0,115200 envp=64100 flashtype=spi rootfstype=squashfs root=31:01 mtdparts=rtk_nor:4040k,10304k(/),1656k,320k(/usr/local/etc),64k!
+*****[uboot] rtk_plat_boot_prep_for_standby start*****
+*****[uboot] boot_mode=2  boot_ac_on=1 boot_power_on_mode=0*****
+name=POWER_EN ppcb_enum.Name=POWER_EN, ppcb_enum.info=1000400000001
+name=PIN_KEYPAD_PWR ppcb_enum.Name=PIN_KEYPAD_PWR, ppcb_enum.info=260006010000000a
+
+(rtkpm_clr_share_mem)2013/04/23 14:55
+[powerMgr_setup_power_en:372]CKP:Power enable line have 2 set!
+!
+[powerMgr_setup_power_en:401]CKP:pm_event_msg:0x100000!
+!
+(powerMgr_setup_mhl)2012/05/09 15:55
+CBUS pm_event_msg=0x2100000
+
+(powerMgr_setup_irda)2012/05/09 15:55
+IrDA Protocol is 1
+IR_KEY1=0xe21dfd02
+IR_KEY2=0xe31c7f00
+IR_KEY3=0x57a8ff00
+pm_event_msg=0x2130000
+
+(powerMgr_setup_keypad_multi)2012/05/09 15:55
+keypad param0=0x10000000a
+kptype=1
+kpidx=6
+PCB_PIN_TYPE_LSADC
+KEYPAD_PARM0=0x  16260a
+Valid keypad paramteter have 1 set.
+pm_event_msg=0x2130001
+name=TUNER_I2C ppcb_enum.Name=TUNER_I2C, ppcb_enum.info=100000000
+*****[uboot] SI2151_DBG: get TUNER_I2C= 0x4294967297*****
+*****[uboot] SI2151_DBG: I2C_Init*****
+*****[uboot]I2C power on I2C_Init:83*****
+*****[uboot] SI2151_DBG: Tuner_PowerDown*****
+*****[uboot] SI2151_DBG: =i2c_master==:1*****
+*****[uboot] SI2151_DBG: ==m_TUNER_DEVICE_ADDR==:96*****
+*****[uboot] SI2151_DBG: ==w_len==:10*****
+*****[uboot] SI2151_DBG: ==write_buf[0]==:c0*****
+*****[uboot] SI2151_DBG: xTuner_I2C_Write: error*****
+ spi flash sw reset finish!
+Kernel command line: androidboot.console=ttyS0 console=ttyS0,115200 envp=64100 flashtype=spi rootfstype=squashfs root=31:01 mtdparts=rtk_nor:4040k,10304k(/),1656k,320k(/usr/local/etc),64k reclaim=64M@32M last_image=8M@96M earlyprintk loglevel=6 ac_on POWERDOWN bootcode_git_version=2fdcc45
+Starting kernel ... 
+Reset ethernet/disable interrupt/flush cache...
+bootargs=androidboot.console=ttyS0 console=ttyS0,115200 envp=64100 flashtype=spi rootfstype=squashfs root=31:01 mtdparts=rtk_nor:4040k,10304k(/),1656k,320k(/usr/local/etc),64k reclaim=64M@32M last_image=8M@96M earlyprintk loglevel=6 ac_on POWERDOWN bootcode_git_version=2fdcc45
+boot_jump_linux 0x00108000(0x0,0x138e,0x60100)
+
+EVer:"#000000
+(build:"9Dec 21 2018 "E15:58:06)
+share[0x0]:0x2130001
+share[0x1]:0x16260a
+share[0x2]:0x0
+share[0x3]:0x0
+share[0x4]:0x0
+share[0x5]:0x0
+share[0x6]:0x0
+share[0x7]:0x0
+share[0x8]:0x0
+share[0x9]:0x0
+share[0xa]:0x0
+share[0xb]:0x0
+share[0xc]:0x0
+share[0xd]:0x1
+share[0xe]:0xe21dfd02
+share[0xf]:0xe31c7f00
+share[0x10]:0x57a8ff00
+share[0x11]:0x0
+share[0x12]:0x0
+share[0x13]:0x0
+share[0x14]:0x0
+share[0x15]:0x0
+share[0x16]:0x0
+share[0x17]:0x0
+share[0x18]:0x0
+share[0x19]:0x0
+share[0x1a]:0x0
+share[0x1b]:0x0
+share[0x1c]:0x0
+share[0x1d]:0x0
+share[0x1e]:0x0
+share[0x1f]:0x0
+
+PwPin 0x1 set SleepModePowerDownLoop in!!!
+0x0 M
+LED_FLASH_CNT=0x7d0 set 0
+LED_FLASH_CNT=0x1771 set 1
+LED_FLASH_CNT=0x7d0 set 0
+0xa, 0xas
+LED_FLASH_CNT=0x1771 set 1
+LED_FLASH_CNT=0x7d0 set 0
+LED_FLASH_CNT=0x1771 set 1
+LED_FLASH_CNT=0x7d0 set 0
+0x14, 0x14s
+LED_FLASH_CNT=0x1771 set 1
+LED_FLASH_CNT=0x7d0 set 0
+LED_FLASH_CNT=0x1771 set 1
+LED_FLASH_CNT=0x7d0 set 0
+
+
+
+
+Hello world, 293x!{uni}[WEI]
+svn: (Dec 22 2016 17:44:32)
+flash_type = 0, secure_type = 0
+crc32_ddr_value: 723a901 crc32_spi_value: 723a901 addr(4c00-4ffc)
+spi 0xb801a808: 202 crc32 check ok
+
+Remain unload bootcode = 0x0
+
+enable_scpu_clk 246
+REG_CRT_SUSPEND_reg = [0], REG_STR_JUMP_ADDR_reg = [0]
+ru
+U-Boot 2012.07-sw/2936/2936_duowei/bootcode-svn92 (Jan 03 2019 - 16:02:04) r-!
+DRAM: 128 MiB
+*****[uboot] DC ON*****
+Await 
+[SFC_LOG][INFO] spi nor id: 0x5e4018
+[SFC_LOG][INFO] [SPINOR-INFO] do_identify_s success!!!
+[SFC_LOG][INFO] SPI FLASH   =  ZB25VQ128   
+[SFC_LOG][INFO] support eMODE_READ_NORMAL
+BOOT_SCHEDULE_REC_PANEL_OFF=0
+[CEC:bootcode]bootparam.c:230
++++++set cbus low
+FW_DVLOGO_IMAGE, bin, target:0xdeaddead, offset:0x3e0000, size:0x1186f, spi_layout:0x1f
+[ENV] read_env from factory failed
+[ENV] Using default environment variables
+
+[INFO] env_relocate:usb start_ac failed. (No USB plug-in)
+install_file_name  601 env_relocate 
+*****[uboot] board_init_r panel_init start*****
+*****[uboot] panel_init_1st start*****
+panel_init_1st  LVDS ON
+boot_record_standby = 0 boot_power_on_mode = 1  wk_sor = 1
+=== Panel Type : 0 ===
+[uboot][panel_init_1st] end!!!
+*****[uboot] panel_init_2nd start*****
+panel_init_2nd	BL ON
+boot_record_standby = 0 boot_power_on_mode = 1 wk_sor = 1
+[uboot][panel_init_2nd] end!!!
+*****[uboot] board_init_r panel_init end*****
+Net:   rtl8139: REALTEK RTL8139 
+Hit Esc or Tab key to enter console mode or rescue linux:  0
+
+*****[uboot] rtk_plat_boot_handler start*****
+*****[uboot] boot_mode=2  boot_ac_on=0 boot_power_on_mode=1*****
+*****[uboot] rtk_plat_boot_setup start*****
+*****[uboot] boot_from_flash=0  boot_from_usb=0 boot_flash_type=0*****
+
+Ago bf [SB2_INSTAT] =  0x00000000
+af [SB2_INSTAT] =  0x00000000
+-------------------
+Audio Version = 1010451 (4ruhtracam)
+SHA-1: 3f97e0c
+Common Version = 1027448
+Binary src compiled at Nov  2 2017 12:30:25
+Note = SQA_DailyBuild
+-------------------
+
+SPDIF Raw Enable: MPG AC3 DTS MPEG2 AAC DDP WMAPRO MLP 
+
+Force 2ch Format: DTS DTSHD AC3 DDP MLP AAC WMAPRO 
+
+set global  0x00000000  0x0000bb80 
+set global  0x00000001  0x0000bb80 
+set global  0x00000002  0x0000bb80 
+set global  0x00000003  0x0000bb80 
+set global  0x00000004  0x0000bb80 
+set global  0x00000005  0x0000bb80 
+set global  0x00000006  0x0000bb80 
+set global  0x00000007  0x0000bb80 
+Vwait [BOOT_AIO] V1go shared-mem   =  0xa0001000
+m  OT_dAiIsOp]_ imniagitc _3n1u5
+e   R o=s S t0axrt000T0a0s0k0Cr0
+eat[eBHoOOTo_kA I3O42] v
+000sniiotn _acllode  D=C U  i0x0d0x
+s  0~0r0e
+ium[BOeO Tp_tAsI  O]0 xE0r0r0o00r! 0m0a0g
+ cV_0n upmkbterQ  =  0 x08x010407040c06000
+, sz 8 16 8
+V0 pktQ  0x00000000  0x00000000
+
+_rk set disable
+[VO]SynGen= 0x92840000
+[vo] VSYNCGEN  0xd0000002/ 0x8006ddd0/ 0x92840000
+[vo] Vodma(0) disable
+[vo] VODMA(0) ForceBG(0)
+Verifying Key... [vfw] zjf sl RPMC_test1 23
+[vfw] zjf sl RPMC_test2 81
+[vfw] zjf WB_RPMC_IncCounter() 383
+~call~  RPMC_test3 130
+[vfw] zjf WB_RPMC_Challenge() 453
+[ao_Init] ver_
+[vfw] zjf sl RPMC_test return  1 142
+
+Result sucessed~~startHook 650
+~~startHook 658
+VP_PowerOnVideo 40
+[vo] Vodma(0) enable
+pov video start  0x82500000, VMM end  0x82ceb000, base2  0x82ceb000, vbm  0x837ec000~vbm create  0x82504000, 34888
+~pov vbm  0x837ec000  0x01d15000
+~chunk  0x837ec000  0x01000000
+~chunk  0x847ec000  0x00d15000
+[FILTER] pass SCPU or KCPU from system to filter SCPU = 0
+[vo] ShowChannel(p0)
+POV: image filter testing
+VBM: configured to User Defined (1280, 720)
++++[RequestBuffer] width 800, height 480 ret 268435456
+POV: request Buffer, Y_BufID = 0
++++[RequestBuffer] width 800, height 480 ret 268435456
+POV: request Buffer, C_BufID = 1
+POV: image filter testing Y_bufID 0, C_BufID 1
+
+(IMG) JPEG detect!!IMG_DEC: Create Filter fmt 0
+IMG_DEC: send cmd to Scaler
+IMG_DEC: send ringbuffer cmd to Dec
+JPEG_DEC: base= 0x85700000 limit= 0x85711878 Wr= 0x8571186f Rd= 0x85700000
+IMG_DEC: send Decode cmd to Dec
+JPG_DEC: IMG_DECODE buf= 0x82ceb000,sz= 0x00b00000
+(JPEG_THUMB) L:1244, size 3, start 6270, length 6104!! 
+(Adobe) set saw_Adobe_marker TRUE!!
+(THUMB) IS USING THUMB 0, w 160, h 96, tgt_w 800, tgt_h 480!!
+(Adobe) set saw_Adobe_marker TRUE!!
+(JPEG) IsC 0, w 800->800, h 480->480, hor 0, ver 0!!
+(JPEG) IsC 1, w 1600->1600, h 480->480, hor 0, ver 0!!JPEG_DEC:allocate ProgBuf  0x82d18000,sz= 0x00100000
+
+(JPEG_COMP) IS_PROG 0!!
+(SendScalerEnd) IsShowPic 0!!IMG_DEC: destroy
+JPG_DEC: decode time=7176 w=800 h=480 
+SE_Scaler_Destroy
+POV: image filter testing DONE
+[vo]VO_COMPONENT_Run
+pre pic->active_format = 0
+plane->active_format = 8
+[vo]bScalerFramesync = 1
+[vo] VODMA_SyncGen_Check: p0, pic 1
+
+_rk set disable
+[VO]SynGen= 0x82030000
+[vo] VSYNCGEN  0xd0000002/ 0x8006ddd0/ 0x82030000
+
+ [vo] ipg1080p_frc_fhd_dibypass !!!
+[vo] VODMA_SendVOInfo
+ptSlrVoInfo  mode=6
+h_start=140
+v_start=13
+h_width=800
+v_length=480
+h_total=1080
+v_total=512
+chroma_fmt=0
+progressive=1
+h_freq=317
+v_freq=600
+pixel_clk=34256250
+i_ratio=0
+source=0
+ptSlrVoInfo  afd=8
+3d_mode=0
+force2d=0
+src_h_wid=800
+src_v_len=480
+NULL == ptSlrVoInfo
+ShowStillPicture~~
+[1]:POV: Wait system to STOP Power on Video!(bVideoDone 2)
+*****[uboot] do_bootm_linux start*****
+*****[uboot] flag = 0*****
+*****[uboot] boot_prep_linux start*****
+*****[uboot] boot_mode=2  boot_ac_on=0 boot_power_on_mode=1*****
+[rtk_plat_boot_prep_mtdparts_nor:938]CKP:tmp_cmdline:androidboot.console=ttyS0 console=ttyS0,115200 envp=64100 flashtype=spi rootfstype=squashfs root=31:01 mtdparts=rtk_nor:4040k,10304k(/),1656k,320k(/usr/local/etc),64k!
+Kernel command line: androidboot.console=ttyS0 console=ttyS0,115200 envp=64100 flashtype=spi rootfstype=squashfs root=31:01 mtdparts=rtk_nor:4040k,10304k(/),1656k,320k(/usr/local/etc),64k reclaim=64M@32M last_image=8M@96M earlyprintk loglevel=6 bootcode_git_version=2fdcc45
+Starting kernel ... 
+Reset ethernet/disable interrupt/flush cache...
+bootargs=androidboot.console=ttyS0 console=ttyS0,115200 envp=64100 flashtype=spi rootfstype=squashfs root=31:01 mtdparts=rtk_nor:4040k,10304k(/),1656k,320k(/usr/local/etc),64k reclaim=64M@32M last_image=8M@96M earlyprintk loglevel=6 bootcode_git_version=2fdcc45
+boot_jump_linux 0x00108000(0x0,0x138e,0x60100)
+[    0.000000] Linux version 3.10.19-mac4+ (guo@Dragon250) (gcc version 4.9.3 20150413 (prerelease) (Realtek ASDK-4.9.3 Build 2215) ) #27 Fri Nov 23 14:57:17 CST 2018
+[    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] mem=128MB@0x00000000
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] ext memory size: 0 highmem size: 0
+[    0.000000] ### highmem 0 0 movable 0 0 ###
+[    0.000000] pcbMgr: RTK
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 30976
+[    0.000000] Kernel command line: androidboot.console=ttyS0 console=ttyS0,115200 envp=64100 flashtype=spi rootfstype=squashfs root=31:01 mtdparts=rtk_nor:4040k,10304k(/),1656k,320k(/usr/local/etc),64k reclaim=64M@32M last_image=8M@96M earlyprintk loglevel=6 bootcode_git_version=2fdcc45
+[    0.000000] Memory: 26620k/26620k available, 104452k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xc8800000 - 0xff000000   ( 872 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xc8000000   ( 128 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0108000 - 0xc061fab8   (5215 kB)
+[    0.000000]       .init : 0xc0620000 - 0xc0646cdc   ( 156 kB)
+[    0.000000]       .data : 0xc0648000 - 0xc0677e60   ( 192 kB)
+[    0.000000]        .bss : 0xc0677e60 - 0xc06aef7c   ( 221 kB)
+[    0.000000] GIC CPU mask not found - kernel will fail to boot.
+[    0.000000] GIC CPU mask not found - kernel will fail to boot.
+[    0.000000] @sb2_intr_setup:    enable sb2 interrupt [reserved rbus address]
+[    0.000000] @sb2_dbg_intr_setup:    enable sb2 dbg interrupt [reserved rbus OR dbus address]
+[    0.000000] @arm_wrapper_intr_setup:    enable arm wrapper interrupt [reserved dbus address for SCPU]
+[    0.197201] rtkbp: memmap size: 270336 
+[    0.201191] 	<<<FREE AREA BASE: 02000000>>>
+[    0.205513] 	0:	0
+[    0.207488] 	1:	0
+[    0.209461] 	2:	0
+[    0.211434] 	3:	0
+[    0.213406] 	4:	0
+[    0.215379] 	5:	0
+[    0.217369] 	6:	0
+[    0.219345] 	7:	0
+[    0.221317] 	8:	0
+[    0.223289] 	9:	0
+[    0.225263] 	10:	0
+[    0.227324] 	11:	1
+[    0.229402] 		Addr: 07000000, order: 11 
+[    0.233421] 	12:	1
+[    0.235485] 		Addr: 06000000, order: 12 
+[    0.239512] 	13:	0
+[    0.241576] 	14:	1
+[    0.243639] 		Addr: 02000000, order: 14 
+[    0.247655] 	15:	0
+[    0.269646] [RTICE]rtice_init alloc input/output buffer size=2096*2 bytes
+[    0.281255] SCSI subsystem initialized
+[    0.287811] [GPIO] Warning, power on
+[    0.295723] NetWinder Floating Point Emulator V0.97 (double precision)
+[    0.303006] size of RPC_POLL_Dev 52 and RPC_INTR_Dev 52...
+[    0.311337] avcpu: audio & video cpu driver for Realtek Media Processors
+[    0.319138] [GDMA]panel_parameter->iCONFIG_PANEL_TYPE=0  *********************
+[    0.319138] 
+[    0.319138] 
+[    0.319138] 
+[    0.331116] [GDMA]panel_parameter=duowei_800_480  *********************
+[    0.331116] 
+[    0.331116] 
+[    0.331116] 
+[    0.342448] 
+[    0.342448] 
+[    0.342448] 
+[    0.342448] 
+[    0.342448]  *****************    gdma init module  *********************
+[    0.342448] 
+[    0.342448] 
+[    0.-42--8---
+---------
+Audio Version = 1010451 (4ruhtracam)
+SHA-1: 3f97e0c
+Common Version = 1027448
+Binary src compiled at Nov  2 2017 12:30:25
+Note = SQA_DailyBuild
+-------------------
+[    0.376570] [GDMA]gdma->iCONFIG_PANEL_TYPE=0  *********************
+[    0.376570] 
+[    0.376570] 
+[    0.376570] 
+[    0.387568] [GDMA]gdma->iCONFIG_PANEL_CUSTOM_INDEX=0  *********************
+[    0.387568] 
+[    0.387568] 
+[    0.387568] 
+[    0.399251] [GDMA]gdma->i3D_DISPLAY_SUPPORT=0 
+[    0.403816] [GDMA]gdma->i3D_LINE_ALTERNATIVE_SUPPORT=0 
+[    0.409180] GDMA_init_module, 3777, MIXER             0xff0007
+[    0.415168] [GDMA] Panel Width=800, Height=480 
+[    0.420292] [GDMA] busH=27Mhz, dclk=27Mhz 
+[    0.424540] GDMA module_init finish
+[    0.429034] [MCP][mcp_probe][2309] Notice, mcp device detected ...
+[    0.436939] 
+[    0.436939] *****    se init module *** CMD TIMEOUT=200
+[    0.443857] se init module major number = 246, jiffies=100 HZ
+[    0.450247] B:SE_INIT...se_devices = c79a0000(79a0000), buffer(noncache) = c6840000(06840000)
+[    0.460116] [PWM] Warning, [rtk_pwm_probe]Initialize PWM--1, name = rtk-pwm
+[    0.467330] [PWM] Warning, [rtk_pwm_probe]925 dev name = (null), id = -1
+[    0.474480] [PWM] Warning, register chrdev(245,0) success.
+[    0.480319] 
+[    0.480319] 
+[    0.480319] 
+[    0.480319] 
+[    0.480319] **********rtice2ap init module*************
+[    0.480319] 
+[    0.480319] 
+[    0.480319] 
+[    0.496329] rtice2ap init module major number = 244
+[    0.501916] [DCMT] INFO, dc_mt_dev_init successfully
+[    0.507058] [linux][CBUS] MHL_init_module[0422]
+[    0.511759] [linux]CBUS: register sucess!!! IRQ 57
+[    0.517136] #### wdt driver ####
+[    0.522480] NFS: Registering the id_resolver key type
+[    0.527712] Key type id_resolver registered
+[    0.532075] Key type id_legacy registered
+[    0.541027] [RTICE]rtice_enable : 1, rtice_port : 0
+[    0.588433] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    0.595077] 
+[    0.595077] 
+[    0.595077] **********SFC init module.......
+[    0.602534] Boottype spi!spi nor flash driver init continue....
+[    0.608595] [SFC-INFO:] SFC_WRITE_MD support
+[    0.612986] [SFC-INFO:] SFC_READ_MD support
+[    0.617391] [SFC-INFO]SPI nor flash match success!!!
+[    0.622498] [SFC-INFO]SPI nor flash id = 0x5e4018
+[    0.627327] support eMODE_READ_NORMAL
+[    0.631101] 5 cmdlinepart partitions found on MTD device rtk_nor
+[    0.637282] [SN-INFO] Using dynamic spi nor partition
+[    0.642477] Creating 5 MTD partitions on "rtk_nor":
+[    0.647496] 0x000000000000-0x0000003f2000 : "Partition_000"
+[    0.654549] 0x0000003f2000-0x000000e02000 : "/"
+[    0.660418] 0x000000e02000-0x000000fa0000 : "Partition_002"
+[    0.667372] 0x000000fa0000-0x000000ff0000 : "/usr/local/etc"
+[    0.674337] 0x000000ff0000-0x000001000000 : "Partition_004"
+[    0.681152] Creating disc partitions!
+[    0.685017] 0x000000000000-0x000001000000 : "disc"
+[1159310]:POV: Wait [    0.693534] rtc: Real Time!Clock of Realtek series CPUs
+[    0.699128] [rtk-i2c]power on
+[    0.702291] [I2C]Get PCB_ENUM I2C_PORT_0 I2C Mode Config phy_id=0 port_id = 4
+[    0.709635] [I2C]Get PCB_ENUM I2C_PORT_1 I2C Mode Config phy_id=1 port_id = 255
+[    0.717568] [I2C-0]: id =4, port =0
+[    0.721148] [I2C-0] create_rtk_i2c_handle: rtk_i2c_flags = 01 irq=57
+[    0.727672] [I2C-0] open successed, reference cnt=1
+[    0.732692] [I2C-0] rtk_i2c_probe : model name = RTD299o
+[    0.738145] [I2C-0] WARNING. Pinmux isn't ready.
+[    0.742925] [I2C-0] setting: wr_reg(b806250c)=00000005
+[    0.748191] [I2C-0] setting: wr_reg(b8000290)=03800a00
+[    0.753489] =========================
+[    0.757244] = VER : 2.2               
+[    0.761083] =========================
+[    0.764853] = PHY : 0               
+[    0.768528] = PORT: -1               
+[    0.772299] = MODEL: RTD299o              
+[    0.776495] = SPD : 100               
+[    0.780334] = SAR : 0x024 (7 bits) 
+[    0.783932] = TX FIFO DEPTH : 32     
+[    0.787692] = RX FIFO DEPTH : 32     
+[    0.791459] = FIFO THRESHOLD: 4     
+[    0.795121] =========================
+[    0.799028] [I2C] i2c_rtk_register_adapter , name = rtk_I2C, id = c7a77a00
+[    0.806566] [I2C-1]: id =255, port =0
+[    0.810326] [I2C-1] create_rtk_i2c_handle: rtk_i2c_flags = 03 irq=51
+[    0.816869] [I2C-1] open successed, reference cnt=1
+[    0.821915] [I2C-1] rtk_i2c_probe : model name = RTD299o
+[    0.827356] [I2C-1] WARNING. Pinmux isn't ready.
+[    0.832136] [I2C-1] setting: wr_reg(b801b20c)=00000005
+[    0.837420] [I2C-1] setting: wr_reg(b8000290)=03800a00
+[    0.842708] =========================
+[    0.846461] = VER : 2.2               
+[    0.850298] =========================
+[    0.854079] = PHY : 1               
+[    0.857742] = PORT: -1               
+[    0.861511] = MODEL: RTD299o              
+[    0.865706] = SPD : 100               
+[    0.869557] = SAR : 0x024 (7 bits) 
+[    0.873146] = TX FIFO DEPTH : 32     
+[    0.876897] = RX FIFO DEPTH : 32     
+[    0.880648] = FIFO THRESHOLD: 4     
+[    0.884333] =========================
+[    0.888247] [I2C] i2c_rtk_register_adapter , name = rtk_I2C, id = c7a77200
+[    0.895891] cec_core_init, register cec_bus c0670550
+[    0.901176] RTD293x cec module init
+[    0.904773] register cec driver 'rtd293x_cec' (c067074c)
+[    0.910266] register cec device 'rtd293x_cec' (c0670608) to cec0
+[    0.916583] probe : cec_dev 'rtd293x_cec' (c0670608), cec_drv 'rtd293x_cec' (c067074c)
+[    0.924735] Open RTD293x CEC
+[    0.927733] Open RTD293x unRet = 0xCA 
+[    0.931641] cec : enable CEC SCPU interrupt
+[    0.938601] Key type dns_resolver registered
+[    0.943356] auth: initialize overlapped region...
+[    0.948199] Registering SWP/SWPB emulation handler
+[    0.953171] Realtek Magellan Power Management 2013/05/06 11:30
+[    0.953171] (c) 2013 Realtek Semiconductor Corp.
+[ARPC] rtkaudio_ready =  0x00000001
+[    0.973119] 
+[    0.973119] 
+[    0.973119] 
+[    0.973119] 
+[    0.973119]  *****************  rtkvdec init module  *********************
+[    0.973119] 
+[    0.973119] 
+[    0.973119] 
+[    0.991358] [rtkaudio_dump_enable 461] open file failed!!
+CreateAudioAgentTpe=7, AO)
+ao create num pin  0x00000004 
+[ao_Set_OutputSamplingRate2] fs = 8(48000)
+AudioAgent list = AA<AO-0>
+CreateAudioAgent (Type=15, PP)
+AA<PP-??> _APP_Create
+
+<APP> PP Create!!!!!!
+[1]:kernel rpc : don't do VideoCreate in POV!!!
+Welcome to Realtek Linux
+
+Please press Enter to activate this console. mount: mounting devpts on /dev/pts failed: No such file or direc<APP> SmoothPlayback create
+<APP> create end
+tory
+AudioAgent list = AA<PP-1> AA<AO-0>
+connect AA<PP-1>.p9 <-> p2.AA<AO-0>
+-------------------
+Audio Version = 1010451 (4ruhtracam)
+SHA-1: 3f97e0c
+Common Version = 1027448
+Binary src compiled at Nov  2 2017 12:30:25
+Note = SQA_DailyBuild
+-------------------
+[1159228]:POV: Wait system to STOP Power on Video!(bVideoDone 2)
+[APRC] enable dump audio log
+
+SetLPrintBuffer: header address =  0x06860000
+
+SetLPrintBuffer: DebugMemorySize =  0x00020000
+[4]:kernel rpc : don't do VideoCreate in POV!!!
+mount: mounting /dev/mtdblock3 on /usr/local/etc failed: Invalid argument
+Starting INET services....
+/etc/init.d/S60lighttpd: line 14: /usr/sbin/sbin/lighttpd: not found
+mkdir: can't create directory '/var/run': File exists
+[1166942]:POV: Wait system to STOP Power on Video!(bVideoDone 2)
+Running dvdplayer with RootApp
+[    2.689284] RTK rtc can work.
+[Watchdog] RootApp AVHDD version...
+[Watchdog] enter 2nd case...
+[Watchdog] rootApp: Always here;
+================================================
+[Watchdog] [704] RootAP execute DvdPlayer...
+================================================
+argc = 2
+argv = factory load
+0+1 records in
+0+1 records out
+242 bytes (242B) copied, 0.000333 seconds, 709.7KB/s
+command:dd if=/sys/realtek_boards/system_parameters of=/tmp/str.txt, (line=205) [file=src/rtk_common.cpp], ret(0)
+command:mkdir -p /tmp/factory, (line=323) [file=src/rtk_factory.cpp], ret(0)
+[1185363]:POV: Wait system to STOP Power on Video!(bVideoDone 2)
+
+[INSTALL INFO][src/rtk_factory.cpp][327] gfactory_block_size = 8000
+[INSTALL INFO][src/rtk_factory.cpp][328] gfactory_size = 8000
+[INSTALL INFO][src/rtk_factory.cpp][329] gerasesize  = 1000
+[INSTALL INFO][src/rtk_factory.cpp][196] pp_ok = 3 current_pp = 1 seq_num = 358 tarsize =9216
+3+0 records in
+3+0 records out
+12288 bytes (12.0KB) copied, 0.001861 seconds, 6.3MB/s
+command:cd /;/bin/busybox dd if=/dev/mtddisc bs=4096 count=3 skip=4088 | /bin/busybox tar x, (line=517) [file=src/rtk_factory.cpp], ret(0)
+command:cp /tmp/factory/layout.txt /tmp/layout.txt, (line=547) [file=src/rtk_factory.cpp], ret(0)
+[INSTALL INFO][src/rtk_common.cpp][396] remove factory lock success
+[4]:kernel rpc : don't do VideoCreate in POV!!!
+[1180713]:POV: Wait system to STOP Power on Video!(bVideoDone 2)
+[WatchDog] does not receive signal for 2 seconds. (DBG: 0, 0, 0)
+[MiracastAP.cpp:159:MiracastAP]
+[AirplayAP.cpp:75:AirplayAP]
+IN : /tmp/ramfs/smb
+********* [DvdPlayer] main start!! 
+======== BootUP: enter ========
+stat successfully
+[vo] ShowChannel(p255)
+[vo] HideChannel(p0)
+[vo] VODMA(0) ForceBG(1)
+[vo]VO_COMPONENT_Stop
+VIDEO_RPC_VideoDestroy Called!~VBM_Destroy
+~clear gpVBM
+~VBM_Destroy ret 0
+VBM_Destroy 268435456!VMM_Destroy 268435456!VIDEO_RPC_VideoDestroy Return![vo] Vodma(0) disable
+[vo] VODMA(0) ForceBG(0)
+POV: Release Video
+kernel rpc : VideoCreate!!!
+~vbm create  0x86850000, 34888
+[1]:[vo] v_pos f_vodmago=0
+[PLI.cpp,435] L1_lsize=0, L1_sets=0, L1_ways=0, L1_csize=0
+pli initialization...
+SetupClassBinary: load setup file
+======== BootUP: SetupClass ========
+System Parameter: 'tv_system=NULL boot_flash=spi factory_start=ff0000 factory_size=10000 bootcode_start=0 bootcode_size=5e000 rescue_start=5e000 rescue_size=0 boot_part=0 factory_ro_start=5e000 factory_ro_size=10000 package_216=0 fac_rec_start=0 fac_rec_size=0
+', len=242
+
+[TVFE] INFO, Internal Demod I2C Path=0
+open pli interface twice...
+LoadSecDebugMask
+Sec Debug Mask >> all enabled
+[TP0] WARNING, INTERNAL_DEMOD  : PORT=1, SRC=7
+[TP0] WARNING, EXTERNAL_TUNER0 : PORT=2, SRC=0
+[TP0] WARNING, EXTERNAL_CAM    : PORT=0, SRC=0
+[TP0] WARNING, Zap TP0 to Port 1 (SRC=7)
+[TP0] WARNING, TP0 OUT Disabled
+[TP0] WARNING, Zap TP0 to Port 1 (SRC=7)
+[TP0] WARNING, Zap TP0 to Port 1 (SRC=7)
+[TP0] WARNING, TP0 OUT Disabled
+[TP0] WARNING, Zap TP0 to Port 1 (SRC=7)
+TP buffer register mutex created
+TP PID register mutex created
+open pli interface twice...
+[TP1] WARNING, INTERNAL_DEMOD  : PORT=1, SRC=7
+[TP1] WARNING, EXTERNAL_TUNER0 : PORT=2, SRC=0
+[TP1] WARNING, EXTERNAL_CAM    : PORT=0, SRC=0
+[TP1] WARNING, Zap TP1 to Port 1 (SRC=7)
+[TP1] WARNING, TP1 OUT Disabled
+[TP1] WARNING, Zap TP1 to Port 1 (SRC=7)
+[TP1] WARNING, Zap TP1 to Port 1 (SRC=7)
+[TP1] WARNING, TP1 OUT Disabled
+[TP1] WARNING, Zap TP1 to Port 1 (SRC=7)
+open pli interface twice...
+[TP2] WARNING, INTERNAL_DEMOD  : PORT=1, SRC=7
+[TP2] WARNING, EXTERNAL_TUNER0 : PORT=2, SRC=0
+[TP2] WARNING, EXTERNAL_CAM    : PORT=0, SRC=0
+[TP2] WARNING, Zap TP2 to Port 1 (SRC=7)
+[TP2] WARNING, TP2 OUT Disabled
+[TP2] WARNING, Zap TP2 to Port 1 (SRC=7)
+[TP2] WARNING, Zap TP2 to Port 1 (SRC=7)
+[TP2] WARNING, TP2 OUT Disabled
+[TP2] WARNING, Zap TP2 to Port 1 (SRC=7)
+
+5,OpenTuner GetModelID = 432
+
+
+[TVFE] WARNING, tuner init from DTV flow
+
+********** SiTRACES activated *********
+Comment the '#define SiTRACES' line
+in Silabs_L0_API.h to de-activate all traces.
+
+SiLabs_Traces.txt file access not possible.
+ I2CAdapter.cpp XferMsg 267
+
+
+#################################################
+SendReadCommand : i2c 1 : FETAL : send random read command to target(c0) fail
+RR [c0] 00 
+
+#################################################
+ I2CAdapter.cpp XferMsg 267
+
+
+#################################################
+SendReadCommand : i2c 1 : FETAL : send random read command to target(c0) fail
+RR [c0] 00 
+
+#################################################
+ I2CAdapter.cpp XferMsg 267
+
+
+#################################################
+SendReadCommand : i2c 1 : FETAL : send random read command to target(c0) fail
+RR [c0] 00 
+
+#################################################
+ I2CAdapter.cpp XferMsg 267
+
+
+#################################################
+SendReadCommand : i2c 1 : FETAL : send random read command to target(c0) fail
+RR [c0] 00 
+
+#################################################
+UpHMACKey Success
+ I2CAdapter.cpp XferMsg 267
+
+
+#################################################
+SendWriteCommand : i2c 1 : FETAL : send write command to target(c0) fail
+Write[c0] 14 00 02 04 08 00 
+#################################################
+
+ I2CAdapter.cpp XferMsg 267
+
+
+#################################################
+SendWriteCommand : i2c 1 : FETAL : send write command to target(c0) fail
+Write[c0] 12 00 00 04 00 01 00 
+#################################################
+
+[TP0] WARNING, Zap TP0 to Port 1 (SRC=7)
+Init Frontend success!!!
+
+91,FE0,OP,OPEN,0
+
+[TVCTL] INFO, creating tuning thread 
+
+91,TVCTL,OP,INIT
+
+92,TUNER_THREAD,OP,ENTER
+IncCounter success
+m_timezone:0
+======== BootUP:  firmware_init ========
+========BootUP:GetBurnMode()=0========
+0+1 records in
+0+1 records out
+242 bytes (242B) copied, 0.000303 seconds, 780.0KB/s
+3+0 records in
+3+0 records out
+12288 bytes (12.0KB) copied, 0.004524 seconds, 2.6MB/s
+[PANEL] sPanelName = duowVideo pli memory addr[0]= 0xa7001e54
+Video pli memory addr[1]= 0xa70ei_800_480
+Scal0054c
+Video pli memory addr[2]= 0xa7001ed4
+Video pli memory addr[3]= 0x00000000
+Video pli memory addr[4]= 0xa7001f8c
+Video pli memory addr[5]= 0xa718cc54
+Video pli memorer_InitRPCShareMy addr[6]= 0xa718cb8c
+Video pli memory addr[7]= 0xa718cbfc
+Video pli memory addr[8]= 0xa718cc2c
+Video pli memory addr[9]= 0x00000000
+scalerDrv_Init
+em xxxxx
+sem key 1076 does not exist. Create it
+md_open
+[SE]Get Vflip Disable
+SendShareMemAddrByRPC Fail
+======== BootUP:[1]:VO: don't support this API line 139
+  tv table init ========
+[AUDIO][AIO] init aio driver -- start ----
+[AUDIO][AIO] init aio driver -- end ------
+======== BootUP:  ConfigureOSD ========
+[AUDIO][APP] library not ready, ignore Audio_HwpCfgMute()
+[AUDIO][APP] library not ready, ignore Audio_HwpCfgMuteTS()
+[AUDIO][APP] init app driver -- start ----
+[AUDIO][APP] init app driver -- end ------
+[AUDIO][APP] Distortion control default setting: 
+[AUDIO][APP] Dist_Hi_TH=80 ; Dist_Lo_TH=79 
+[AUDIO][ATV] init atv driver -- start ----
+[AUDIO][ATV] Support All Standards
+[AUDIO][ATV] Support A2M DEV_MODE:High
+[AUDIO][ATV] Support BG/DK/I DEV_MODE:High
+[AUDIO][ATV] init. global constants
+[AUDIO][ATV] m_vol_comp_btsc_sap    =0x00000000
+[AUDIO][ATV] m_vol_comp_btsc_stereo =0x00000000
+[AUDIO][ATV] m_vol_comp_btsc_mono   =0x00000000
+[AUDIO][ATV] btsc_pilot_threshold_high =0x000000b0
+[AUDIO][ATV] btsc_pilot_threshold_low  =0x00000070
+[AUDIO][ATV] btsc_sap_threshold_high   =0x00000064
+[AUDIO][ATV] btsc_sap_threshold_low    =0x00000050
+[AUDIO][ATV] btsc_sap_noise_threshold_high =0x000001c0
+[AUDIO][ATV] btsc_sap_noise_threshold_low  =0x000000c0
+[AUDIO][ATV] m_vol_comp_mn_dual   =0x00000000
+[AUDIO][ATV] m_vol_comp_mn_stereo =0x00000000
+[AUDIO][ATV] m_vol_comp_mn_mono   =0x00000000
+[AUDIO][ATV] go sp NICAM
+[AUDIO][ATV] init atv driver -- end ------
+[AUDIO][AIO] AioThread create...
+[AUDIO][APP] EQLoudValue Change Mode = 0
+[AUDIO][ATV] AtvThread ceate...
+[LIB][APP] APP_EQ_BAND_NUM = 9 (MAX=9)
+eq_cfg.coef[0][0][ 0].a1 = ffffd503
+eq_cfg.coef[1][3][ 2].a2 = 3405
+eq_cfg.coef[8][5][12].h0 = 4ad
+curr_opt_fs is 8
+======== BootUP:  vout init ========
+======== BootUP:  resource mgr init ========
+==== Scaler_ForceBg(0, 0, 1 :: 1) ====
+drvif_scalerdisplay_force_bg = 1
+[WatchDog] does not receive signal for 2 seconds. (DBG: 0, 0, 2)
+======Scaler_ForceBg end======
+abstractap semid=32769
+semctl ret=0======== BootUP:  tv lock init ========
+[TODO][3D]new Function@scaler_2Dcvt3D_set_shiftDirection
+======== BootUP:  resource mgr init ========
+ShowDGLogo start!!!
+VideoCreate() has done!!
+VideoConfig called:
+Scaler_Init
+Enable VIP
+scaler library init ...mainInputSource=9
+
+It had created  message queues for state!***** 
+==== Scaler_ForceBg(0, 0, 1 :: 1) ====
+drvif_scalerdisplay_force_bg = 1
+======Scaler_For
+-[vo] FR Ctrl, Table[0]-
+[vo] force: enable 0, framerate 59940
+[vo] double ceBg end======
+dvs enable: 0, threshold 31000
+[vo] High-Bound check: enable 1, Bound 60000, Adjust 60000
+[vo] Low-Bound check: enable 0, Bound 47952, Adjust 59940
+
+-[vo] FR Ctrl, Table[1]-
+[vo] force: enable 0, framerate 59940
+[vo] double dvs enable: 0, threshold 31000
+[vo] High-Bound check: enable 1, Bound 60000, Adjust 60000
+[vo] Low-Bound check: enable 0, Bound 47952, Adjust 59940
+Initial Memory i
+-[vo] FR Ctrl, Table[0]-
+[vo] force: enable 0, framerate 59940
+[vo] double dvs enable: 1, threshold 31000
+[vo] High-Bound check: enable 1, Bound 60000, Adjust 60000
+[vo] Low-Bound check: enable 1, Bound 47952, Adjust 59940
+
+-[vo] FR Cs completed. 
+trl, Table[1]-
+[vo] force: enable 0, framerate 59940
+[vo] double dvs enable: 0, threshold 31000
+[vo] High-Bound check: enable 1, Bound 60000, Adjust 60000
+[vo] Low-Bound check: enable 0, Bound 47952, Adjust 59940
+
+System setup enSCALERIOC_SET_PANEL_INFO
+scalerInfo_setPanelInfo
+VT/DV.STA/END=525/25/505, PanelType/Vflip=0/202
+vironment is com[RPC] get AuthorityKey( 0xbd868141)
+pleted!
+DispInit, type/idx/3D=0/0/0[PR/SG=0/0]
+Initial Display is completed. 
+ End of sync rtnr, dnr, dcc level
+fw_firmware_createTask()
+SE_WaitCmdDone,SE_POLLING_LIMIT_TIME=60000.
+SE_WaitCmdDone,SE_ENABLE_PRINT_POLLING_TIME=0.
+SE_WaitCmdDone,SE_CHECK_TIME_TO_PRINTF=0.
+[SLR] Mode[0], BW Saving=0
+Scaler_Init Done
+
+
+
+--------------------------
+== enter thread_rtice2ap!
+----------------------------
+
+pParentalLock = 0x8d93c0
+ConfigureDisplayWindow Line: 850
+ConfigureDisplayWindow Line: 852
+Scaler_ForceBg[0:0:1] return!change ratio[0] ==========> not resetart
+Scaler_ForceBg[0:0:1] return!ConfigureDisplayWindow Line: 854
+======== BootUP:  dtv frontend init ========
+Init,ColorDataType size= 286
+Init,ColorDataType size= 286
+xLoadFromDisk, 286
+ path = /tmp/factory/
+[index=9][m_count=9]SourceControl_GetSourceByIdx error!
+[index=9][m_count=9]SourceControl_GetSourceByIdx error!
+[index=9][m_count=9]SourceControl_GetSourceByIdx error!
+[index=9][m_count=9]SourceControl_GetSourceByIdx error!
+[VipTable.cpp:1013]m_bCopyVipTable=0 
+== xRegisterTable == start ==
+===load_vip_table===
+ _UI2FL_MAIN_DISPLAYRATIO_CHANGE
+################ drvif_framesync_gatting (0, plane 0) => 2030000
+SCALERIOC_SETDISPINFO2
+SetDCC_system_info_structure_table
+ [DCR] dcr_tablescalerVIP DCR 0	0	0	0	0
+scalerVIP DCR 0	0	0	0	0
+.DCR_TABLE[0][0] =  10
+ [DCR] select_dcr_mode=0
+ [DCR] m_DCR_Max_Value=100
+== xRegisterTable == end ==
+Panel_SetBackLightLevel=80
+Panel_SetBackLightLevel:: mappingValue = 46
+panel SetPwmDuty v=46
+[GPIO]@setISOGPIO, value=1
+[GPIO4]@ioctlSetGPIOOutput, isomisc=0
+
+(powerMgr_get_wakeup_source)2012/05/30 19:50
+
+wakeup source : 100728833
+powerMgr_get_wakeup_source: 0x1.
+read BootParamTable @RtkBootUPBoot Param File = [/tmp/factory/bin_panel/000BootPara[AUDIO] Receive debug memory address x  0x816ab938 !
+[m.h]
+xLoadTableAUDIO] Debug memory address *x is  0x07aa2000 !
+
+SetLPrintBuffer: header address =  0x00000000
+s: = [1]
+xLoadTVIDEO_RPC_SetDebugMemory Called!ables: = [1]
+xLoadTables: = [100]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+xLoadTables: = [0]
+
+(powerMgr_get_wakeup_source)2012/05/30 19:50
+
+wakeup source : 100728833
+ m_hotelmode_vol  = 0 
+======== BootUP:  exit ========
+[GPIO110]@ioctlSetGPIOOutput, isomisc=1
+GrandMa 154
+ABCDEFG
+Video DebugMem Physical Address = 0x7aa2180
+-=- create FT engine for ./Resource/font/DroidSansFallback.ttf
+[WatchDog] does not receive signal for 2 seconds. (DBG: 0, 0, 4)
+file system 3, cylinder 0
+mount to /tmp/hdd/volumes/HDD1
+file system 1, cylinder 0
+mount to na
+file system 2, cylinder 0
+mount to /tmp/hdd/root
+file system 6, cylinder 0
+mount to /tmp/hdd/livepause
+[VideoPlayback][285] VideoPlayback::VideoPlayback
+[VideoPlayback][285] VideoPlayback::VideoPlayback
+
+(powerMgr_get_sleep_dur)2012/05/09 15:55
+
+sleep duration: 2min 38sec 14ms [zfeng_cao] DC on!!! ===durationtime=2 === 
+GetTimerTotalCount == 0 
+ durationtime = 2 
+ ontimer = 0 
+[RootAP.cpp:246:Activate], enter
+ConfigureDisplayWindow Line: 850
+ConfigureDisplayWindow Line: 852
+Scaler_ForceBg[0:0:1] return!change ratio[0] ==========> not resetart
+Scaler_ForceBg[0:0:1] return!ConfigureDisplayWindow Line: 854
+ AbstractAP::m_ontimeShutDown = 0 
+ SetupClass::GetInstance()->GetOnTimerPosition() = -1 
+[zfeng_cao] [FILTER] pass SCPU or KCPU from system to filter SCPU = 1
+RootAP.cpp::scarCreateAudioAgent (Type=8, AI)
+t fixMe 347
+
+AudioAgent list = 
+                  SetAudioMute(SpAA<AI-2> AA<PP-1> AA<AO-0>
+eaker) [request]CreateAudioAgent (Type=7, AO)
+ id=2(OSD/AP), mCreateAudioAgent (Type=15, PP)
+ute=1(Mute)
+Set[RPC] GET_PCM_IN_PIN
+AudioMute(Speake[PP] Remote(cpu=1,pid=204) gets pin0
+r)(System:Unmute)(PrCtrl:Unmute)CreateAudioAgent (Type=16, DEC)
+(OSD/AP:Mute)(RmAudioAgent list = AA<DEC-3> AA<AI-2> AA<PP-1> AA<AO-0>
+Ctrl:Unmute)(:Unconnect AA<DEC-3>.p5 <-> p0.AA<PPmute)
+SetAudioM-1>
+ute(Speaker) [apconnect AA<AI-2>.p5 <-> p0.AA<DEC-3>
+ply] enableMute=1(Mute)
+[AUDIO][APP] Mute[4] CH[vo]VO_COMPONENT_Pause
+:0x3
+[AUDIO][USR] Mute 
+[AUDIO][LIB] Mute (0:0x0)(1:0x0)(2:0x0)(3:0x0)(4:0x3)(5:0x0)
+AudioLib_SetMute() enable = 1
+SetAudioMute(Speaker) [re<APP> switch focus: 0xfffffffe -> 0x00000000
+quest] id=0(System), mute=1(Mute)
+SetAudioMute(Speaker)(System:Mute)(PrCtrl:Unmute)(OSD/AP:Mute)(RmCtrl:Unmute)(:Unmute)
+SetAudioMute(Speaker) [apply] enableMute=1(Mute)
+[AUDIO][APP] Mute[4] CH:0x3
+ _UI2FL_MAIN_DISPLAYRATIO_CHANGE
+################ drvif_framesync_gatting (0, plane 0) => 2030000
+[AUDIO][USR] Mute 
+[AUDIO][LIB] Mute (0:0x0)(1:0x0)(2:0x0)(3:0x0)(4:0x3)(5:0x0)
+SetAudioMute(AVout) [request] id=0(System), mute=1(Mute)
+SetAudioMute(AVout)(System:Mute)(PrCtrl:Unmute)(OSD/AP:Unmute)(RmCtrl:Unmute)(:Unmute)
+SetAudioMute(AVout) [apply] enableMute=1(Mute)
+[AUDIO][APP] TS_Mute[4] CH:0x3
+[AUDIO][USR] TS_Mute 
+[AUDIO][LIB] TS_Mute (0:0x0)(1:0x0)(2:0x0)(3:0x0)(4:0x3)(5:0x0)
+SetAudioMute(Speaker) [request] id=2(OSD/AP), mute=1(Mute)
+$$$ 111(): time =                   44
+AtvLib_SetADCSetting: Set ATV ADC Setting
+fw_tv_setvideomode mode:10,freq:33ad5ec0 
+TvApi.cpp 4235
+m_noSignalTimerTimout:900 
+$$$ 222(): time =                   46
+DisplayControl_GetRatio:Currnet source =27====
+$$$ SourceControl::xActivate 222-1(): time =                   46
+Source @@@@ 27
+ratio @@@@ 15
+SetAspectRatio ============source=27
+SetAspectRatio ============ratio =15
+$$$ SourceControl::xActivate 222()-2: time =                   46
+AudioLib_SetMute() enable = 1
+SetAudioMute(Speaker) [request] id=0(System), mute=1(Mute)
+SetAudioMute(AVout) [request] id=0(System), mute=1(Mute)
+SetAudioMute(Speaker) [request] id=2(OSD/AP), mute=1(Mute)
+SourceLib_Play: source=[27], pChannel == NULL
+SourceLib_Play source = 1
+[./PPAout/CPPAOut.cpp 146] audioVersion = 1010451
+[QueryPPInPin:92] PinID=0, total 1 pin(s) in use
+PPAOUT output pin is  pp pin
+[./PPAout/CPPAOut.cpp:1060]:SetSpdifOut_ChannelStatus_Info      set_by_user=1 
+[wen]flowConstruct-189: set_by_user=1, professional=0, copyright=1, category_region=12, category_L_bit=0, word_length=2
+[VIN] idx[0] input_fmt=0
+Scaler_ChangeMainSource(index=0, mode/std/ratio=0/2/11)
+Scaler_ForceBg[0:0:1] return![./PPAout/CPPAOut.cpp:922]SetFocus() m_focusPinID: 0 ????????????
+sourceRate= 256, decodeRate= 256
+[DEC-3] Init Bitstream RingBuffer hdr: 0sxcaa1lce7rIcR6Q4_0s etbTVaSseca:n Mo0xdea
+68e0000
+[DBG] SrcIdx[101[DEC-3] Init Inband RingBuffer hdr: 0x01cec000 base: 0x07300000
+] I3D=0, ratio=1[DEC-3] SetRefClock ( 0x01c7c2c0)
+1
+[TV]: vga.cpp:VG[PP-1] Init inPin[0] RingBuffer hdr: 0xa1ce6000 base: 0xa7280000
+A_ADCPowerControl(863) ST
+*** a<APP> max_out_out pause
+[TV]:samplerate type  0x00000000
+ vga.cpp:VGA_ADC
+<APP> TAGC OFF
+PowerControl(102[vo]VO_COMPONENT_Run
+2) HSYNC PAD power down
+[TV]: ypbpr.cpp:YPbPr_A<APP> SpeedScale delaybuf flush  0x00000000
+[DCPowerControl(3AUDIO WARNING] <10) ST
+[SLR] VoAPP> Reset cgms_change_flag when APP flush
+Disp=1
+iptSrc=0[AI][HPT] ai_call_hpt: 0x00000000, ai_flush: 0x00000000 END
+
+AP callback funcSCALERIOC_SETDISPINFO2
+tion for changing source
+source idx=0
+[RotatoDBG] Reset main cvt sub mode, src/idx=1/101
+sourceControl:xActivate-----
+$$$ SourceControl::xActivate 222-3(): time =                  519
+$$$ SourceControl::xActivate 222-4(): time =                  519
+$$$ SourceControl::xActivate 222-5(): time =                  519
+[Pass through  0x00000000: 0x00000001]
+[DEC-3] analog in  0x00000001 
+ENABLE WrADMA ai_focus_id: 0x00000000
+New Format!!  0x00000000, LPCM
+<APP> codec: type 0x00000021, subtype 0x00000000
+[AO][HPT] isAnalogSrc = 1, pcm_out_en = 0
+[AO][hpt]end
+[AO][TS]Enable RdAdma
+[AO][PB]Enable RdAdma
+fw_tv_getChannelSettingFlag  wait_set_channel_done=1
+[VDC] 480i    2 
+[VDC] Set_Hstate : 5, 9134: f3cd
+[VDC] Set_Cstate : 3, 9410: 1000006
+[VDC] Vsync_Cntl_Mode : 0
+[VDC] Prefer default 
+[VDC] TV channel play  
+[VDC] TV Reset reg. 
+$$$ 333(): time =                  822
+audioSource = 1
+clean TV source 
+TV wait change statusENUM_AIN_SWITCH_FOCUS (fcs: 0x00000000,mux: 0x0000000f)
+ 0 
+TVwait chanTS focus[0] =  0x00000000, mux_in =  0x00000000
+ge status 0 
+TVPB focus[0] =  0x00000000, mux_in =  0x0000000fwait change stat
+us 0 
+TV change[DEC-3] analog in  0x00000001 
+  0 finish 
+[AUset new source clk ready
+DIO][ATV] tv Mute = 0 
+[AUDIO][<APP] Unmute[3] CAPP> SpeedScale delaybuf flush  0x00000000
+[H:0x0
+[AUDIO][UAUDIO WARNING] <APP> RSR] Mute 
+[AUDIeset cgms_change_flag w[AO][TS] Underflow
+hen[AO][PB] Underflow
+ O][LIB] Mute (0:APP flush
+0x0)(1:0x0)(2:0x0)(3:0x0)(4:0x3)[AI][HPT] ai_call_hpt: 0x00000000, ai_flush: 0x00000000 END
+(5:0x0)
+[AUDIO][APP] TS_Unmute[3] CH:0x0
+[AUDIO][USR] TS_Mute 
+[AUDIO][LIB] TS_Mute (0:0x0)(1:0x0)(2:0x0)(3:0x0)(4:0x3)(5:0x0)
+[audio ] enter atv  
+TV wait change status 1 
+TVwait change status 1 
+TVwait change status 1 
+TVwait change status 1 
+TV change  1 finish 
+[Audio_AioSetIptNoiseReduction] phase out .......
+[Audio_AioSetOptAVC]phase out.....
+3[AUDIO][APP]1 set volume_comp[0] ch=3,vol=27
+[LIB][APP] APP_EQ_BAND_NUM = 9 (MAX=9)
+$$$ 333-1(): time =                  895
+$$$ 333-2(): time =                  895
+[Audio][AIO]DisableBassPara
+[Audio][APP]Standard flow to set EQ para
+video check 0
+yuan,VD_mode=15,InSource=1
+!! VDC_Detect Done 2 !! 
+Get source=9, mode = 0 in off-line measure
+video check 1
+video check 2
+Get source=9, mode = 0 in off-line measure
+[Pass through  0x00000000: 0x00000001]
+[DEC-3] analog in  0x00000001 
+ENABLE WrADMA ai_focus_id: 0x00000000
+New Format!!  0x00000000, LPCM
+[AO][HPT] isAnalogSrc = 1, pcm_out_en = 0
+[AO][hpt]end
+video check 3
+[AO][TS]Enable RdAdma
+[AO][PB]Enable RdAdma
+[Audio][AIO]DisableTreblePara
+[Audio][APP]Standard flow to set EQ para
+video check 4
+Get source=9, mode = 0 in off-line measure
+video check 5
+Get source=9, mode = 0 in off-line measure
+video check 6
+AudioControl_SetBalance:0
+[AUDIO][APP] set balance L/R : 0
+[AUDIO][APP] Unmute[1] CH:0x0
+[AUDIO][USR] Mute 
+[AUDIO][LIB] Mute (0:0x0)(1:0x0)(2:0x0)(3:0x0)(4:0x3)(5:0x0)
+[LIB][APP] APP_EQ_BAND_NUM = 9 (MAX=9)
+3[AUDIO][APP]1 set volume_comp[0] ch=3,vol=27
+[LIB][APP] APP_EQ_BAND_NUM = 9 (MAX=9)
+$$$ 444(): time =                 1375
+$$$ 555(): time =                 1375
+[./PPAout/CPPAOut.cpp:1060]:SetSpdifOut_ChannelStatus_Info      set_by_user=1 
+[wen]SourceControl_Play-1038: set_by_user=1, professional=0, copyright=1, category_region=12, category_L_bit=0, word_length=2
+[RootAP.cpp:7352:ReloadVideoSource], leave
+###### - script pParam: rss_file://Resource/ui_script/DVBT_TV036_01V/layoutDefinition.rss
+[RootAP.cpp:7357:GiveUpFocus], enter
+[RootAP.cpp:7358:GiveUpFocus], leave
+trace....... init::: 225:: 10965
+*******IsWhiteSpaceCondensed:1
+Get source=9, mode = 0 in off-line measure
+video check 7
+############### CBaseView::m_bIsActivate = 1
+Create View 0
+unrecognized key!!![zhongrixin Debug]======getCurrentSetting_system = 21[zhongrixin Debug]======getCurrentSetting_system = 21[zhongrixin Debug]======getCurrentSetting_system = 21[zhongrixin Debug]======getCurrentSetting_system = 21[Script] ItemLayoutForNormal 
+[Script] ---->preloadFinished has value 
+[Trace Code] commonData.cpp, postMessage, [3671],message=6, input=return
+trace....... init::: 458:: 11141
+*****SetOsdTimer*******enter***
+[hqy debug] ==== RootAP.cpp:8626 ===source = 27==
+==== Scaler_ForceBg(0, 4, 1 :: 1) ====
+drvif_scalerdisplay_force_bg = 1
+======Scaler_ForceBg end======
+[RootAP.cpp:517:Activate], leave
+bb  enable == 1 vb = 0 
+[Script] ===Layout Definition userInput===return, PreloadFinished= 
+[Script] ===Layout Definition userInput===return, PreloadFinished=1 
+[Script] ===Layout Definition userInput===return, PreloadFinished=1 
+ main.cpp main 1186 currentAP=MenuBarAP, key=24
+video check 8
+
+[hqy debug] ==== command = 299
+Delete View 0
+[RootAP.cpp:7363:RestoreFocus], enter IsNoSignal:0 Enable:0
+[RootAP.cpp:7381:RestoreFocus], leave
+AbtractAP:xBackgroundInit Start
+*****SetOsdTimer*******enter***
+*****SetOsdTimer*******leave***
+=================================hqy debug :  end!!=======================
+ main.cpp main 1186 currentAP=RootAP, key=299
+Get source=9, mode = 0 in off-line measure
+[hqy debug] ======Rootap.cpp  processkey ======
+[hqy debug]######11 - script pParam: rss_file://Resource/ui_script/DVBT_TV036_01V/deskTop.rss
+[RootAP.cpp:7357:GiveUpFocus], enter
+[RootAP.cpp:7358:GiveUpFocus], leave
+trace....... init::: 225:: 11251
+*******IsWhiteSpaceCondensed:1
+video check 9
+Get source=9, mode = 0 in off-line measure
+############### CBaseView::m_bIsActivate = 1
+Create View 0
+ auto[DEC] GET_FORMAT_INFO( 0x00000003):L set itemImageXPPCM
+C to 35.000000
+unrecognized key!!![Script] ______________________________________________ deskTop onEnter 
+3[AUDIO][APP]1 set volume_comp[0] ch=3,vol=27
+[LIB][APP] APP_EQ_BAND_NUM = 9 (MAX=9)
+trace....... init::: 458:: 11420
+*****SetOsdTimer*******enter***
+
+ => [HandleRecordFlowEvent] FE_Playback_DecoderMessage, audio content format: 3
+[WatchDog] does not receive signal for 2 seconds. (DBG: 0, 0, 6)
+
+Get source=9, mo[DEC] GET_FORMAT_INFO( 0x00000003):de = 0 in off-liLPCM
+ne measure
+ => [HandleRecordFlowEvent] FE_Playback_DecoderMessage, audio content format: 3
+video check a
+ShowDGLogo end!!!
+video check b
+Get source=9, mode = 0 in off-line measure
+video check c
+[IDMA] Src, VgipM=2, 2
+wdp         Scaler_SendMessageToUI---->message==15
+path=0, msg=1308, ulMsgData=0
+Enter Set DataFormat Handler
+xOnMessage message=51c, data=0
+xOnMessage end
+original size1 199 720 12 240
+original size2 199 720 12 240
+@@h_start_even_odd_flag=1
+ratio_type=b
+source src type=27 1 95
+>>>>>[   12.193002] auth: there is no overlapped region in this platform 692...
+>>>>>>>>>>>>VDC_MODE_NTSC>>>>>>>>
+hratio=92.000000 vratio=94.000000
+after overscan 227 663 19 226
+
+ adjust data [1] 0 5 1 4
+
+ adjust data [1] 0 5 1 4
+ucVDCDetect=0, ucVDCSet=0,ucLock=0
+[Overscan]adust data[1] 0 5 1 4
+
+h_start=227
+h_width=668
+v_start=20
+v_length=230
+
+h_start=227
+h_width=668
+v_start=20
+v_length=230
+Scaler_DispGetInputInfo(SLR_INPUT_DISPLAY)=0 in capture window
+
+ SetCapture IHStart = d9 in fw_scaler_set_vgip_capture
+
+#####Set SLR_IPMARGIN_H_MAX(138)#####
+
+#####Set SLR_IPMARGIN_H_MIN(118)#####
+
+ usV_Porch = 1b
+#####Set SLR_IPMARGIN_V_MAX(138)#####
+ucVpositionTolerance=10, IPV_ACT_STA_Temp=20
+
+#####Set SLR_IPMARGIN_V_MIN(118)#####
+
+ Free Run mode in SetCaptureWindow
+ ucIPV_Max_Margin = 8a
+ ucIPV_Min_Margin = 76
+ ucIVS2DVSDelay = fscaler_set_vgip_capture_shift(display, 0, 0)scaler_set_vgip_capture_shift_algo1, x/y=0/0
+H front porch less than 3
+IPV_ACT_STA=5, shifty=0
+IVStart:5, usV_FrontPorch:1b
+shiftx:0, shifty:0
+[CH1] IHS_Delay:29, IVS_Delay:f
+[3D][0] FP Main2Delay=8029000f
+[zfeng_cao]modestate_set_vgip end
+IPV_ACT_LEN = 0xe6, usAfterDILen = 0x1c8, IPH_ACT_WID = 0x29c
+DiWid = 0x29c(668)
+CapLen = 0x1c8, CapWid = 0x29c
+MEM_ACT_LEN = 0x1c8, MEM_ACT_WID = 0x29c
+DispLen = 0x1e0, DispWid = 0x320
+IV_FREQ = 0x258
+
+ DI Memory set FIFO, new path !
+ Width:668, Height:230, DMA mode=422
+ Data status Y=10 C=10
+ Info status BTR=1(type:0) SMD=1 RTNR style=1
+ 5A mode 
+
+ Data BitNum=20, Info BitNum=12W=668,H=230,bit=12
+ Data number = 400, length = 60, remain = 7, water_level = 68 in setting DI Read FIFO
+ Data number = 400, length = 60, remain = 7, water_level = 60 in setting DI Write FIFO
+ Info number = 450, length = 32, remain = 25, water_level = 32 in setting DI Read[   12.356658] auth: there is no overlapped region in this platform 692...
+ FIFO
+ Info number = 450, length = 32, remain = 25, water_level = 32 in setting DI Write FIFODI Memory, data_value = 69780, info_value = 3f480
+Allocate RBUS index 3 memory fail,allocate by pli
+ main.cpp main 1186 currentAP=MenuBarAP, key=1308
+[MEM] Idx[3]=2400000(2193 KB)
+ IP address0 = 2400000
+ IP address1 = 2469780
+ IP address2 = 24d2f00
+ IP address3 = 253c680
+ Info IP address0 = 25a5e00
+ Info IP address1 = 25e5280
+Set DI Memory Main 5A
+1...3A,5A condition :force 3A=8ffafda6
+Diane--drvif_color_ma_init
+Into Modify_DI_RdStart()
+channel=0, di_f=1, rtnr_f=1, hscaledown_f=0
+video check d
+[zfeng_cao]modestate_set_imd_domain end
+[scaler] scalerdisplay set main control
+[DISP] set main=H=0/320, V=0/1e0
+video check e
+no tv signal 
+[AUDIO][ATV] tv Mute = 1 
+[AUDIO][APP] Mute[3] CH:0x3
+[AUDIO][USR] Mute 
+[AUDIO][LIB] Mute (0:0x0)(1:0x0)(2:0x0)(3:0x3)(4:0x3)(5:0x0)
+[AUDIO][APP] TS_Mute[3] CH:0x3
+[AUDIO][USR] TS_Mute 
+[AUDIO][LIB] TS_Mute (0:0x0)(1:0x0)(2:0x0)(3:0x3)(4:0x3)(5:0x0)
+[Memory-cap]:TotalSize=179a0,capWid=29c,10Bit=1,422=1
+[Memory]WL=78,Q=325,Rm=48
+[3D]TotalSize_ori= bcd00,TotalSize1_ori= d5c00,INPUT_CAP_LEN=1c8, SG_FRC=0
+memory_get_capture_max_size:TotalSize1 == 102144
+###################main buffer TotalSize=773376;;TotalSize1=102144;;TotalSize2=SCALERIOC_SETDISPINFO2
+0
+Allocate RBUS index 5 memory fail,allocate by pli
+[MEM] Idx[5]=6000000(1711 KB)
+[MEM] Idx[4]=60d5e00(855 KB)
+[Memory displ[SIS INIT] 668x230 VIP SOURCE UPDATE : 0 ->ay]:TotalSize=d1 4
+
+[Memory-cap]:TotalSize=d4,capWid=29c,10Bit=1,422=1
+Line Step=0xd4
+[Memory display]:TotalSize=d1
+memory_set_main 2185 bDouble=1
+0 display set H position
+shiftx:0, shifty:0
+[CH1] IHS_Delay:29, IVS_Delay:f
+IVSDelay=f
+[zfeng_cao]modestate_set_framesync end
+modestate_set_display_on, enable VGIP ISR
+
+ set_dclk frame rate = 59, srcType/defClk/frcLL[1/29000000/0] 
+ 
+ pre finetune  DClk = 29000000 Hz  &  Max DClk = 54000000 Hz
+dclk debug 29000000 1087500 750 1
+dclk max.min (54000000.26000000) 
+
+ after finetune DClk = 29000000 Hz  &  Max DClk = 54000000 Hz Min Dclk = 26000000 Hz
+Target M/N/O code(2) : c/1/1
+[SLR] set_dclk_sel=1
+
+$$$$[DCC] width=668, height=456,total_pixel=304609
+2.set_quality_init_value[0]=1
+==========  source=4===================
+yuan,DLTI=0
+Warning!! Scaler_SetIntra not through IP
+Scaler_SetMADI, value = 2
+[PQ_Check]Scaler_set_ICM_table=0
+yuan,icm driver=0
+yuan,sharp=0
+yuan,cmps=0,128
+yuan,bri=0,0,0
+yuan,cmps=0,128
+yuan,bri=128,0,0
+yuan,cmps=0,128
+yuan,bri=128,0,0
+yuan,cmps=0,128
+yuan,bri=128,0,0
+Scaler_SetSharpness ==> 50yuan,sharptable=0
+yuan,drive_DCL_B=0
+yuan,drive_picture=32
+Panel_SetBackLightLevel=80
+Panel_SetBackLightLevel:: mappingValue = 46
+panel SetPwmDuty v=46
+[GPIO]@setISOGPIO, value=1
+[GPIO4]@ioctlSetGPIOOutput, isomisc=0
+yuan,OSD_Backlight=80
+wdp         Scaler_SendMessageToUI---->message==17
+Send display ready to UI thread
+path=0, msg=1309, ulMsgData=1
+xOnMessage message=51d, data=1
+trace xDisplayReady() data = 1
+SetAudioMute(Speaker) [request] id=1(PrCtrl), mute=0(Unmute)
+SetAudioMute(AVout) [request] id=1(PrCtrl), mute=0(Unmute)
+Scaler_GetRoiInfo I3D[0], mode/wid/len/vFreq=255/720/240/600
+Scaler_GetRoiInfo hz = 0
+[VDC] set free run is 525 lines
+wdp         Scaler_SendMessageToUI---->message==7
+path=0, msg=1305, ulMsgData=0
+SetBootLogoStatus = 1 bSave = 1
+/bin/sh: can't create dev/null: nonexistent directory
+Boot Param File = [/tmp/factory/bin_panel/000BootParam.h]
+ xSaveTables: = [1]
+ xSaveTables: = [1]
+ xSaveTables: = [100]
+ BOOT_POWER_ON_MODE === 
+ xSaveTables: = [0]
+ LOCAL_UPGRADE_EN === 
+ xSaveTables: = [0]
+ BOOT_PJD_MODE === 
+ xSaveTables: = [0]
+ BOOT_POWER_ON_PANELINDEX === 
+ xSaveTables: = [0]
+ BOOT_POWER_ON_MODE_STATUS === 
+ xSaveTables: = [0]
+ BOOT_AD_ADJUST === 
+ xSaveTables: = [0]
+ xSaveTables: = [0]
+ xSaveTables: = [0]
+ xSaveTables: = [0]
+ xSaveTables: = [0]
+ xSaveTables: = [0]
+ xSaveTables: = [0]
+ xSaveTables: = [0]
+
+xDisplayReady(): failed to detect video lock for ATV
+DisplayLib_SetVisible:: VOUT_FORCE_BG_SYSTEM SetInvisible
+[AUDIO][ATV] ATV Force not mute is 4
+xOnMessage end
+
+SetAudioMute(Speaker) [request] id=1(PrCtrl), mute=0(Unmute)
+SetAudioMute(AVout) [request] id=1(PrCtrl), mute=0(Unmute)
+argc = 2
+argv = factory save
+0+1 records in
+0+1 records out
+242 bytes (242B) copied, 0.000340 seconds, 695.1KB/s
+command:dd if=/sys/realtek_boards/system_parameters of=/tmp/str.txt, (line=205) [file=src/rtk_common.cpp], ret(0)
+command:mkdir -p /tmp/factory, (line=323) [file=src/rtk_factory.cpp], ret(0)
+[INSTALL INFO][src/rtk_factory.cpp][326] gfactory_start = ff0000
+[INSTALL INFO][src/rtk_factory.cpp][327] gfactory_block_size = 8000
+[INSTALL INFO][src/rtk_factory.cpp][328] gfactory_size = 8000
+[INSTALL INFO][src/rtk_factory.cpp][329] gerasesize  = 1000
+[INSTALL INFO][src/rtk_factory.cpp][196] pp_ok = 3 current_pp = 1 seq_num = 360 tarsize =9216
+tar: removing leading '/' from member names
+command:/bin/busybox tar cf /tmp/factory.tar /tmp/factory, (line=668) [file=src/rtk_factory.cpp], ret(0)
+[INSTALL INFO][src/rtk_factory.cpp][674] *****************
+ret = 512
+ret = 512
+[INSTALL INFO][src/rtk_factory.cpp][676] *****************
+[INSTALL INFO][src/rtk_factory.cpp][691] save to current_pp = 0 seq_num = 361
+file_size = 9728
+factory_start = ff0000
+factory_size = 8000
+command:rm /tmp/factory.tar, (line=696) [file=src/rtk_factory.cpp], ret(0)
+[INSTALL INFO][src/rtk_common.cpp][396] remove factory lock success
+[Script] deskTop userInput====================== SLR_MAIN_DISPLAY_READY 
+[AUDIO][APP] set ts_volume ch=3,vol=-11
+[AUDIO][APP] ts_vol=-11, a=-1,b=4,c=5
+[AUDIO][APP] ts_vol=-11, a=-1,b=4,c=5
+$$$ <BOOTTIME>Bootup- display ready time =                 7669
+ display ready === 
+thread create!!!
+cloud UNIT TEST HDMI TABLE !!!!
+miss HDMI1_PHY_PORT
+[HDMI_RX][DBG], drvif_Hdmi_regTable 0 8398ec
+[HDMI_RX][DBG], drvif_Hdmi_regTable 1 839a1c
+[HDMI_RX][DBG], drvif_Hdmi_regTable 2 839b4c
+cloud UNIT TEST HDMI TABLE  finish !!!!
+[HDMI_RX][DBG], drvif_Hdmi_regTable 5 7dd05c
+[HDMI] MHL EDID TABLE DONE!!!!
+[HDMI_RX][DBG], drvif_Hdmi_regTable 4 7dd15c
+
+
+
+
+
+
+
+
+drvif_Hdmi_Init ...start!
+[HDMI_RX][DBG], [HDMI] PullUp 1K Inside
+[HDMI_RX][DBG], Test hot plug  LOW channel_index = 1 
+[HDMI_RX][DBG], drvif_Hdmi_EnableEDID : 1 1
+[HDMI_RX][DBG], EQ_HBR_Setting_EQ_bias_1X
+ curSource = 27 
+ value = 1 
+ main.cpp main 1186 currentAP=MenuBarAP, key=1309
+IN : /tmp/net
+Create /tmp/net Ok!!!
+begin
+end
+ initialFlag = 1
+begin
+ kbd_control.cpp thread_tty 775
+keyboard: -1
+end, dongle_id = -1
+end, ret = 0
+[HDMI_RX][DBG], [HDMI] mode=0, TAP0=00, KOffset Result(R,G,B)=(0x1b, 0x10, 0x1b), [HDMI_RX][DBG], Range(R,G,B)=(1,1,2)
+[HDMI_RX][DBG], [HDMI] mode=0, TAP0=04, KOffset Result(R,G,B)=(0x17, 0x0e, 0x1a), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=0, TAP0=08, KOffset Result(R,G,B)=(0x16, 0x0e, 0x18), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=0, TAP0=12, KOffset Result(R,G,B)=(0x16, 0x0d, 0x18), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=0, TAP0=16, KOffset Result(R,G,B)=(0x15, 0x0c, 0x17), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], EQ_LBR_Setting
+[HDMI_RX][DBG], [HDMI] mode=1, TAP0=00, KOffset Result(R,G,B)=(0x18, 0x13, 0x18), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=1, TAP0=04, KOffset Result(R,G,B)=(0x15, 0x12, 0x14), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[Script] deskTop userInput====================== 
+
+An incorrect name : AbstractAP
+
+
+An incorrect name : AbstractAP
+
+SetAudioMute(Speaker) [request] id=2(OSD/AP), mute=1(Mute)
+ main.cpp main 1186 currentAP=MenuBarAP, key=1305
+[HDMI_RX][DBG], [HDMI] mode=1, TAP0=08, KOffset Result(R,G,B)=(0x15, 0x12, 0x14), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=1, TAP0=12, KOffset Result(R,G,B)=(0x14, 0x11, 0x13), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=1, TAP0=16, KOffset Result(R,G,B)=(0x14, 0x11, 0x13), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], EQ_HBR_Setting_EQ_bias_1X
+[HDMI_RX][DBG], [HDMI] mode=2, TAP0=00, KOffset Result(R,G,B)=(0x1a, 0x16, 0x1c), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=2, TAP0=04, KOffset Result(R,G,B)=(0x17, 0x13, 0x17), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=2, TAP0=08, KOffset Result(R,G,B)=(0x15, 0x12, 0x15), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=2, TAP0=12, KOffset Result(R,G,B)=(0x14, 0x12, 0x14), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=2, TAP0=16, KOffset Result(R,G,B)=(0x14, 0x11, 0x13), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], EQ_LBR_Setting
+[HDMI_RX][DBG], [HDMI] mode=3, TAP0=00, KOffset Result(R,G,B)=(0x17, 0x15, 0x16), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=3, TAP0=04, KOffset Result(R,G,B)=(0x15, 0x13, 0x13), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=3, TAP0=08, KOffset Result(R,G,B)=(0x14, 0x13, 0x12), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=3, TAP0=12, KOffset Result(R,G,B)=(0x14, 0x13, 0x11), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [HDMI] mode=3, TAP0=16, KOffset Result(R,G,B)=(0x13, 0x12, 0x11), [HDMI_RX][DBG], Range(R,G,B)=(1,1,1)
+[HDMI_RX][DBG], [CBUS_LOG]  _MHL_CLR_HPD FAIL!!!!
+[HDMI_RX][DBG], drvif_Hdmi_Init Release Cbus power  
+[HDMI_RX][DBG], drvif_Hdmi_EnableEDID : 1 1
+[HDMI_RX][DBG], Test hot plug HIGH channel_index = 1 
+drvif_Hdmi_Init...Done!
+[rtice] echo 29870272 > /sys/module/rtice2/parameters/AudioDebugFlagAddr
+
+[rtice] echo 29870336 > /sys/module/rtice2/parameters/VideoDebugFlagAddr
+
+lock success
+release success
+[GPIO106]@ioctlSetGPIOOutput, isomisc=1
+[MediaPlayServer.cpp 147] socket_path = /tmp/MediaPlayRequest
+xCreateConnection : /tmp/RealtekTmp/MediaPlayRequest
+AbtractAP:xBackgroundInit Completed
+[   13.794126] [DCMT] WARNING, dc_mt_register_module_debug_func successed
+[   13.883834] #@# usb_hcd_reset_endpoint(1940) hcd->driver->endpoint_reset   (null)
+[System2ApDaemon.cpp,threadSys2ApExe,164]msg type = 6 ,msg len = 7 ,msg = 31 2D 32 20 55 50 00 00 
+
+
+ ((([Sys2ApBridge.cpp-CallBack_usb_event-584] CMD - event_id = 6 MessageNumber = 1 ,MSG = 1-2 UP)))
+
+
+(((USB: Insert !!)))
+[Script] deskTop userInput====================== usb_plugged_in 
+menubarap not handle this message!!! switch 2 imsAP
+Hotplug got one USB Hotplug of "Add" from port "1-2".
+[System2ApDaemon.cpp,threadSys2ApExe,164]msg type = 1 ,msg len = 9 ,msg = 77 6C 61 6E 30 20 55 50 
+[Sys2ApBridge.cpp-CallBack_net_plug_event-95] CMD - event_id = 1 MessageNumber = 1 
+[CallBack_net_plug_event-108] MsgCmd=UP
+begin, ccrmod_wan_num=1 
+begin
+Found, dongle = rtl8188eu
+end, dongle_id = 4
+wifi model=2 
+Hotplug got one Net Hotplug of "Add" from "wlan0". It may be Realtek's wireless device.
+Hotplug got one Net Hotplug of "Add" from "wlan1". It may be Realtek's wireless device.
+j = 0
+begin, iface = 1
+There is no ability to bridge
+end, ret = 0
+./wpa_supplicant -P/var/lock/wpa_supplicant.pid -g/var/run/wpa_supplicant-global -qq&
+
+DCC_bin_boundary_flag=1
+NO_SIGNAL_TIMER.
+
+An incorrect name : AbstractAP
+
+HandleNoSignal start!!!
+TvInfoMsgboxAP exist! 
+HandleNoSignal end!!!
+j = 1
+j = 2
+here.
+begin, iface = 1
+There is no ability to bridge
+end, ret = 0
+CMD size = 97 :'./wpa_cli -g/var/run/wpa_supplicant-global interface_add wlan0 "" nl80211 /var/run/wpa_supplicant'
+OK
+CMD size = 40 :'./wpa_cli -p/var/run/wpa_supplicant scan'
+Selected interface 'wlan0'
+OK
+end
+begin, test iface = 1 m_state = 0x0, current_route=0 
+save SetupClass to flash
+first wifi plug in setting
+begin
+Found, dongle = rtl8188eu
+end, dongle_id = 4
+begin
+end
+begin, iface = 1
+end
+Init br0
+cmd = ifconfig wlan0 up 
+begin
+CMD size = 46 :'./wpa_cli -p/var/run/wpa_supplicant disconnect'
+Selected interface 'wlan0'
+OK
+here 1
+endqq, ret = 0
+xiaobaozi11 test CMD_WIFI_PLUGIN
+[System2ApDaemon.cpp,threadSys2ApExe,164]msg type = 1 ,msg len = 9 ,msg = 77 6C 61 6E 31 20 55 50 
+[Sys2ApBridge.cpp-CallBack_net_plug_event-95] CMD - event_id = 1 MessageNumber = 1 
+Result: fix DCC Curve 'Linear'
+NO_SIGNAL_TIMER.
+
+An incorrect name : AbstractAP
+
+HandleNoSignal start!!!
+TvInfoMsgboxAP exist! 
+HandleNoSignal end!!!
+DCC_bin_boundary_flag=1
