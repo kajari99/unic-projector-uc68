@@ -31,9 +31,14 @@ I saved and flashed from the 25Q128 flash (25VG128ASEG) using the CH341A program
 I created a hybrid firmware version with artificial intelligence from the two firmware.bins and I'm trying to bring a fixed version to life with the right settings and a working SQUASHFS.
 This resulted in the attached fixed.bin file. 
 
-With this linux command:dd if=unic_uc68_4pda.bin of=fixed.bin bs=1 skip=$((0x003F1FCE)) seek=$((0x003F1FCE)) conv=notrunc
+//
+
+Comment:
+With this linux command: dd if=unic_uc68_4pda.bin of=fixed.bin bs=1 skip=$((0x003F1FCE)) seek=$((0x003F1FCE)) conv=notrunc
 
 The fixed.bin here is the original firmware (uc68-dump.bin) renamed and overwritten with this command, which is part of the flash.
+
+//
 
 My hardware:  Realtek RTD2936HBZ CPU ,realtek rtl8188ETV wifi module ,U-Boot 2012.07 ,LC03502G24E LCoS (Liquid Crystal on Silicon) And theoretically the display : "PANEL_TYPE=duowei_800_480"
 
